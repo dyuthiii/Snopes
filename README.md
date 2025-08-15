@@ -1,4 +1,4 @@
-# Snopes Fake-News Classifier
+# Snopes Raw Scraped Data & Fake-News Classifier
 ## Code:
 1) Scraped Snopes Website for Articles from January-July 2025. 
 2) Predict whether a Snopes fact-check article is True or False using classic NLP (TF-IDF) and a linear classifier.
