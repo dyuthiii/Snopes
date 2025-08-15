@@ -1,0 +1,1111 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='SnopesTableauViz' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='snopes_2025_JanJul (snopes_2025_JanJul)' inline='true' name='federated.02ncg331vnmahf1be7lou0p6yx1g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='snopes_2025_JanJul' name='excel-direct.073li051d1sgaw1509m8f193go10'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/spark/OneDrive/Desktop/Snopes/output/snopes_2025_JanJul.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.073li051d1sgaw1509m8f193go10' name='snopes_2025_JanJul' table='[snopes_2025_JanJul$]' type='table'>
+          <columns gridOrigin='A1:H1813:no:A1:H1813:0' header='yes' outcome='2'>
+            <column datatype='string' name='url' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='string' name='author' ordinal='2' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd&apos;T&apos;HH:mm:ssZZZZZ|#|#|yyyy-MM-dd&apos;T&apos;HH:mm:ss' name='date_published' ordinal='3' />
+            <column datatype='string' name='category' ordinal='4' />
+            <column datatype='string' name='rating' ordinal='5' />
+            <column datatype='string' name='body' ordinal='6' />
+            <column datatype='string' name='body Pt.2' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[snopes_2025_JanJul]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H1813:no:A1:H1813:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[snopes_2025_JanJul]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[snopes!2025!JanJul_7E2397A491EF431D98A0C3786B1B524F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[snopes_2025_JanJul]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[snopes!2025!JanJul_7E2397A491EF431D98A0C3786B1B524F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[author]</local-name>
+            <parent-name>[snopes_2025_JanJul]</parent-name>
+            <remote-alias>author</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[snopes!2025!JanJul_7E2397A491EF431D98A0C3786B1B524F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_published</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_published]</local-name>
+            <parent-name>[snopes_2025_JanJul]</parent-name>
+            <remote-alias>date_published</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <object-id>[snopes!2025!JanJul_7E2397A491EF431D98A0C3786B1B524F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[snopes_2025_JanJul]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[snopes!2025!JanJul_7E2397A491EF431D98A0C3786B1B524F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[snopes_2025_JanJul]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[snopes!2025!JanJul_7E2397A491EF431D98A0C3786B1B524F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[body]</local-name>
+            <parent-name>[snopes_2025_JanJul]</parent-name>
+            <remote-alias>body</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[snopes!2025!JanJul_7E2397A491EF431D98A0C3786B1B524F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body Pt.2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[body Pt.2]</local-name>
+            <parent-name>[snopes_2025_JanJul]</parent-name>
+            <remote-alias>body Pt.2</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[snopes!2025!JanJul_7E2397A491EF431D98A0C3786B1B524F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='snopes_2025_JanJul' datatype='table' name='[__tableau_internal_object_id__].[snopes!2025!JanJul_7E2397A491EF431D98A0C3786B1B524F]' role='measure' type='quantitative' />
+      <column caption='Author' datatype='string' name='[author]' role='dimension' type='nominal' />
+      <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Date Published' datatype='datetime' datatype-customized='true' name='[date_published]' role='dimension' type='ordinal' />
+      <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/spark/AppData/Local/Temp/TableauTemp/#TableauTemp_1lxelfm0k9i0vz173u0560a43qj5.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>url</remote-alias>
+              <ordinal>0</ordinal>
+              <family>snopes_2025_JanJul</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1811</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>snopes_2025_JanJul</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1811</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>author</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[author]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>author</remote-alias>
+              <ordinal>2</ordinal>
+              <family>snopes_2025_JanJul</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_published</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[date_published]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_published</remote-alias>
+              <ordinal>3</ordinal>
+              <family>snopes_2025_JanJul</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1756</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>4</ordinal>
+              <family>snopes_2025_JanJul</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating</remote-alias>
+              <ordinal>5</ordinal>
+              <family>snopes_2025_JanJul</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>body</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[body]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>body</remote-alias>
+              <ordinal>6</ordinal>
+              <family>snopes_2025_JanJul</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1783</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>body Pt.2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[body Pt.2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>body Pt.2</remote-alias>
+              <ordinal>7</ordinal>
+              <family>snopes_2025_JanJul</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:category:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;News&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Food&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Technology&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Politics&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Health&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Announcements&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;History&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;U.S. Politics&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Quotes&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Lifestyle&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Business&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Science&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Entertainment&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='snopes_2025_JanJul' id='snopes!2025!JanJul_7E2397A491EF431D98A0C3786B1B524F'>
+            <properties context=''>
+              <relation connection='excel-direct.073li051d1sgaw1509m8f193go10' name='snopes_2025_JanJul' table='[snopes_2025_JanJul$]' type='table'>
+                <columns gridOrigin='A1:H1813:no:A1:H1813:0' header='yes' outcome='2'>
+                  <column datatype='string' name='url' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='string' name='author' ordinal='2' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd&apos;T&apos;HH:mm:ssZZZZZ|#|#|yyyy-MM-dd&apos;T&apos;HH:mm:ss' name='date_published' ordinal='3' />
+                  <column datatype='string' name='category' ordinal='4' />
+                  <column datatype='string' name='rating' ordinal='5' />
+                  <column datatype='string' name='body' ordinal='6' />
+                  <column datatype='string' name='body Pt.2' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Author Contributions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='snopes_2025_JanJul (snopes_2025_JanJul)' name='federated.02ncg331vnmahf1be7lou0p6yx1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ncg331vnmahf1be7lou0p6yx1g'>
+            <column caption='Author' datatype='string' name='[author]' role='dimension' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[author]' derivation='None' name='[none:author:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]' />
+              <text column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:author:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{514644CB-847C-4C27-A167-4ABC4C4B96A0}' />
+    </worksheet>
+    <worksheet name='Author-Category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='snopes_2025_JanJul (snopes_2025_JanJul)' name='federated.02ncg331vnmahf1be7lou0p6yx1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ncg331vnmahf1be7lou0p6yx1g'>
+            <column caption='Author' datatype='string' name='[author]' role='dimension' type='nominal' />
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[author]' derivation='None' name='[none:author:nk]' pivot='key' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Announcements&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Business&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Entertainment&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Food&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Health&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;History&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lifestyle&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;News&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Politics&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Quotes&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Science&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Technology&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;U.S. Politics&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]</rows>
+        <cols>[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:author:nk]</cols>
+      </table>
+      <simple-id uuid='{C5EA78E5-05FF-4F5A-B595-C6831C506B14}' />
+    </worksheet>
+    <worksheet name='Category Frequencies'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='snopes_2025_JanJul (snopes_2025_JanJul)' name='federated.02ncg331vnmahf1be7lou0p6yx1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ncg331vnmahf1be7lou0p6yx1g'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.02ncg331vnmahf1be7lou0p6yx1g].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]</rows>
+        <cols>[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]</cols>
+      </table>
+      <simple-id uuid='{D191FE64-D64E-41DC-8515-C050E103BC6D}' />
+    </worksheet>
+    <worksheet name='Month-Title-Category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='snopes_2025_JanJul (snopes_2025_JanJul)' name='federated.02ncg331vnmahf1be7lou0p6yx1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ncg331vnmahf1be7lou0p6yx1g'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Published' datatype='datetime' datatype-customized='true' name='[date_published]' role='dimension' type='ordinal' />
+            <column-instance column='[date_published]' derivation='Month' name='[mn:date_published:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[mn:date_published:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[mn:date_published:ok]' member='1' />
+              <groupfilter function='member' level='[mn:date_published:ok]' member='2' />
+              <groupfilter function='member' level='[mn:date_published:ok]' member='3' />
+              <groupfilter function='member' level='[mn:date_published:ok]' member='4' />
+              <groupfilter function='member' level='[mn:date_published:ok]' member='5' />
+              <groupfilter function='member' level='[mn:date_published:ok]' member='6' />
+              <groupfilter function='member' level='[mn:date_published:ok]' member='7' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Announcements&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Business&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Entertainment&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Food&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Health&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;History&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lifestyle&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;News&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Politics&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Quotes&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Science&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Technology&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;U.S. Politics&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02ncg331vnmahf1be7lou0p6yx1g].[mn:date_published:ok]</column>
+            <column>[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]' value='56' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='17' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]</rows>
+        <cols>[federated.02ncg331vnmahf1be7lou0p6yx1g].[mn:date_published:ok]</cols>
+      </table>
+      <simple-id uuid='{4EFC6A2D-4E84-4A52-8984-9C6068A3F105}' />
+    </worksheet>
+    <worksheet name='Month-distinctTitles-categories'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='snopes_2025_JanJul (snopes_2025_JanJul)' name='federated.02ncg331vnmahf1be7lou0p6yx1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ncg331vnmahf1be7lou0p6yx1g'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Published' datatype='datetime' datatype-customized='true' name='[date_published]' role='dimension' type='ordinal' />
+            <column-instance column='[date_published]' derivation='Month' name='[mn:date_published:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[mn:date_published:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>7</max>
+          </filter>
+          <filter class='categorical' column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Announcements&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Business&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Entertainment&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Food&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Health&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;History&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lifestyle&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;News&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Politics&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Quotes&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Science&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Technology&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;U.S. Politics&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02ncg331vnmahf1be7lou0p6yx1g].[mn:date_published:qk]</column>
+            <column>[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]</rows>
+        <cols>[federated.02ncg331vnmahf1be7lou0p6yx1g].[mn:date_published:qk]</cols>
+      </table>
+      <simple-id uuid='{5B931263-3FFF-4AA2-987E-A4254FA19F96}' />
+    </worksheet>
+    <worksheet name='Month-distinctTitles-categories (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='snopes_2025_JanJul (snopes_2025_JanJul)' name='federated.02ncg331vnmahf1be7lou0p6yx1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ncg331vnmahf1be7lou0p6yx1g'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Published' datatype='datetime' datatype-customized='true' name='[date_published]' role='dimension' type='ordinal' />
+            <column-instance column='[date_published]' derivation='Month' name='[mn:date_published:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[date_published]' derivation='Month' name='[mn:date_published:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[mn:date_published:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>7</max>
+          </filter>
+          <filter class='categorical' column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Announcements&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Business&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Entertainment&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Food&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Health&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;History&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lifestyle&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;News&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Politics&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Quotes&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Science&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Technology&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;U.S. Politics&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02ncg331vnmahf1be7lou0p6yx1g].[mn:date_published:qk]</column>
+            <column>[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]</rows>
+        <cols>[federated.02ncg331vnmahf1be7lou0p6yx1g].[mn:date_published:ok]</cols>
+      </table>
+      <simple-id uuid='{6E3CC6DB-9E57-4E73-A53A-587640108533}' />
+    </worksheet>
+    <worksheet name='category-rating treemap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='snopes_2025_JanJul (snopes_2025_JanJul)' name='federated.02ncg331vnmahf1be7lou0p6yx1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ncg331vnmahf1be7lou0p6yx1g'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rating]' derivation='None' name='[none:rating:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Announcements&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Business&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Entertainment&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Food&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Health&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;History&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Lifestyle&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;News&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Politics&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Quotes&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Science&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;Technology&quot;' />
+              <groupfilter function='member' level='[none:category:nk]' member='&quot;U.S. Politics&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:rating:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Correct Attribution About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Fake About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: False About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Incorrect Attribution About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Labeled Satire About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Legend About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Legit About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Miscaptioned About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Mixture About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Mostly False About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Mostly True About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Originated as Satire About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Outdated About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: Recall About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Rating: True About this rating&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Why is there not a rating on this post? There&apos;s not enough verified evidence for us to definitively confirm or debunk this rumor. Contact us if you have credible information to share. We&apos;ll update this post as necessary.&quot;' />
+              <groupfilter function='member' level='[none:rating:nk]' member='&quot;Why is there not a rating on this post? While the photo appears to be edited past what is considered normal, there&apos;s not quite enough verified evidence for us to definitively call it fake. Contact us if you have credible information to share. We&apos;ll update this post as necessary.&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]</column>
+            <column>[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:rating:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='605' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]' />
+              <color column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]' />
+              <text column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]' />
+              <text column='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:rating:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{508848E1-EBC0-4088-A6C4-816040257E44}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='520' sizing-mode='range' />
+      <zones>
+        <zone h='45241' id='4' name='Month-Title-Category' w='44769' x='-923' y='11034' />
+        <zone h='19034' id='5' name='Month-Title-Category' pane-specification-id='1' param='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]' type-v2='color' w='51846' x='46308' y='1379' />
+        <zone h='44966' id='6' name='Month-distinctTitles-categories' w='52923' x='47077' y='20552' />
+        <zone h='41241' id='7' name='category-rating treemap' w='99231' x='1077' y='58759' />
+        <zone h='2897' id='8' name='category-rating treemap' pane-specification-id='0' param='[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]' type-v2='color' w='48308' x='6923' y='62483' />
+        <zone forceUpdate='true' h='10069' id='9' type-v2='text' w='40308' x='2462' y='1241'>
+          <formatted-text>
+            <run bold='true' fontname='Tableau Medium' fontsize='15' underline='true'>Snopes Article Category Visualizations</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97794' id='10' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1103'>
+                <zone forceUpdate='true' h='10069' id='9' type-v2='text' w='40308' x='2462' y='1241'>
+                  <formatted-text>
+                    <run bold='true' fontname='Tableau Medium' fontsize='15' underline='true'>Snopes Article Category Visualizations</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45241' id='4' is-fixed='true' name='Month-Title-Category' w='44769' x='-923' y='11034'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19034' id='5' name='Month-Title-Category' pane-specification-id='1' param='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]' type-v2='color' w='51846' x='46308' y='1379'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44966' id='6' is-fixed='true' name='Month-distinctTitles-categories' w='52923' x='47077' y='20552'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41241' id='7' is-fixed='true' name='category-rating treemap' w='99231' x='1077' y='58759'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2897' id='8' name='category-rating treemap' pane-specification-id='0' param='[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]' type-v2='color' w='48308' x='6923' y='62483'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8E932623-ACC9-4744-AB72-BBBF3A1790A3}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Month-Title-Category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Month-distinctTitles-categories'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='category-rating treemap' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4EDC31C5-A330-43C5-977E-92E0BD22A473}' />
+    </window>
+    <window class='worksheet' name='Category Frequencies'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D8C9BEB1-A0CA-4A76-8840-8E0F072138E3}' />
+    </window>
+    <window class='worksheet' name='category-rating treemap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02ncg331vnmahf1be7lou0p6yx1g].[ctd:title:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CF7E2E05-27E6-408C-AD37-FB777B9065E4}' />
+    </window>
+    <window class='worksheet' name='Month-Title-Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{184490B1-2A0B-41C3-A101-E4C1D04D4858}' />
+    </window>
+    <window class='worksheet' name='Month-distinctTitles-categories'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2A3C30DD-4A6A-4FB0-BADF-7E7E4516556F}' />
+    </window>
+    <window class='worksheet' name='Month-distinctTitles-categories (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B99F2E7-1595-475D-9CD2-0A974ADFE9D6}' />
+    </window>
+    <window class='worksheet' name='Author Contributions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B2D87125-BB87-4248-B0FA-6DDC0A6EBA51}' />
+    </window>
+    <window class='worksheet' name='Author-Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.02ncg331vnmahf1be7lou0p6yx1g].[none:category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CF0C36F2-9FF2-4373-ADC3-4CB2501618F2}' />
+    </window>
+  </windows>
+</workbook>
