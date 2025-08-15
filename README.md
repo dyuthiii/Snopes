@@ -52,6 +52,8 @@ binary_Tf (bool) — True if the claim was rated true, False otherwise
 
 📊 Per-column interpretability: show top weighted n-grams for each class
 ***
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 @software{snopes_classifier,
   title = {Snopes Fake-News Classifier},
